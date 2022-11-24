@@ -19,12 +19,12 @@ public class App {
 
         System.out.println("Все простые числа в дипазоне от 1 до " + limit);
 
-        //loop from 1 to limit
+        //цикл от 1 до limit
         for(int i=1; i < limit; i++) {
 
             boolean isPrime = true;
 
-            //check to see if the number is prime
+            //Проверка, что число простое
             for(int j=2; j < i ; j++) {
 
                 if(i % j == 0) {
@@ -32,7 +32,7 @@ public class App {
                     break;
                 }
             }
-            // print the number
+            // Вывод, если простое
             if(isPrime) {
                 System.out.print(i + " ");
                 count++;
